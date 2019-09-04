@@ -9,9 +9,7 @@ app.get('/listing/:id', (req, res) => {
   res.sendFile(path.join(__dirname + '/public/index.html'), (err) => {
     if (err) {
       console.log(err);
-    } else {
-      console.log('File sent!');
-    }
+    } 
   })
 });
 
