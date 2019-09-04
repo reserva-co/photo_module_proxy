@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Birbhousing - FEC</title>
+  </head>
+  <body>
+    <div id="Reviews"></div>
+    <div id="Location"></div>
+    <div id="Booking"></div>
+    <div id="Photos"></div>
+<!-- These two lines are just one way to get the React library running in the client's browser -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="http://localhost:3004/bundle.js"></script>
+    <!-- <script src="http://localhost:3001/bundle.js"></script> -->
+    <!-- <script src="http://localhost:3002/main.js"></script> -->
+    <!-- <script src="http://localhost:3003/bundle.js"></script> -->
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      const listingId = window.location.pathname.match(/[0-9]*$/);
+      console.log(listingId);
+      ReactDOM.render(
+        React.createElement(Photos.default, {listingId: listingId}),
+        document.getElementById('Photos')
+      );
+      // ReactDOM.render(
+      //   React.createElement(Reviews),
+      //   document.getElementById('Reviews')
+      // );
+  //     ReactDOM.render(
+  //       React.createElement(Location),
+  //       document.getElementById('Location')
+  //     );
+  //     ReservationsModule.default.ReactDOM.render(
+  //    ReservationsModule.default.React.createElement(ReservationsModule.default.ReservationsModule),
+  //    document.getElementById('Reservations')
+  //  );
+    </script>
+  </body>
+</html>

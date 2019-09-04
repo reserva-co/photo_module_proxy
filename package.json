@@ -1,0 +1,36 @@
+{
+  "name": "photo_proxy",
+  "description": "Proxy server to use with the relevant module",
+  "author": "Jessica Yu",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "build": "webpack --watch"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "webpack": "^4.39.3"
+  },
+  "devDependencies": {
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "webpack-cli": "^3.3.7"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reserva-co/photo_proxy.git"
+  },
+  "keywords": [
+    "photo"
+  ],
+  "bugs": {
+    "url": "https://github.com/reserva-co/photo_proxy/issues"
+  },
+  "homepage": "https://github.com/reserva-co/photo_proxy#readme"
+}
